@@ -1,0 +1,93 @@
+/*
+Author: Cameron Andrus
+Date: 12/08/2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, footer, h1, nav, main, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: crimson;
+}
+
+header {
+	text-align: center;
+	font-size: 2em;
+}
+
+.container {
+	display: grid;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-columns: 29% 29% 29%;
+	grid-template-areas: 
+		"a1 a1 a1"
+		"nav main side"
+		"foot foot foot";
+	grid-gap: 2%;
+	justify-content: center; 
+}
+
+.header {
+	grid-area: a1;
+	min-height: 400px;
+	background-color: crimson;
+}
+
+.nav {
+	grid-area: nav;
+	background-color: green;
+	color: white;
+}
+
+.main {
+	grid-area: main;
+	background-color: white;
+	color: black;
+}
+
+.sidebar {
+	grid-area: side;
+	background-color: yellow;
+	color: black;
+}
+ 
+.footer {
+	grid-area: foot;
+	text-align: center;
+	background-color: crimson;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
